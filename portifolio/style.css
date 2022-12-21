@@ -5,10 +5,11 @@
 *{ /* borda e largura */
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 .hamburguer{ /* propriedade button */
-    background-color: red;
     width: 2rem;
     height: 2rem;
     position: fixed;
@@ -18,6 +19,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.show-menu .hamburguer{
+    right: 18rem;
 }
 
 .line{
@@ -112,4 +118,65 @@ header{ /* parte da imagem */
     }
 }
 
+.sidebar{
+    width: 20rem;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    transition: all 1s;
+}
 
+.show-menu .sidebar {
+    right: 0;
+}
+
+.menu{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-item{
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.menu-link{
+    font-family: var(--font-action);
+    font-size: 2rem;
+    color: #555;
+    transition: color 1s;
+}
+
+
+.menu-link:hover{
+    color: #6a3093;
+}
+
+.social-media{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-media i{
+    background-color:#8E0E00;
+    color:#000000;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 1s;
+}
+
+.social-media i :hover{
+    background-color: black;
+}
