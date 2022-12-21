@@ -1,5 +1,6 @@
 # portifolio
-site ddrone
+
+Site DDRONE
 
 # TAREFAS
 
@@ -8,7 +9,7 @@ o controle das tarefas do projeto que sera realizado no github
 ## ícones
 
 
-:package: nova funcionalidade
-:up: atualização
-:beatle: correção dde bug
-:chekered flag: relase
+- :package: nova funcionalidade
+- :up: atualização
+- :beetle: correção dde bug
+- :checkered flag: relase
