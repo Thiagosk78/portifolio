@@ -231,6 +231,7 @@ header{ /* parte da imagem */
 .card{
     width: 18rem;
     height: 25rem;
+    position: relative;
 }
 
 .card-img-wrapper{
@@ -242,6 +243,62 @@ header{ /* parte da imagem */
     object-fit: cover;
     width: 100%;
     height: 100%;
-    border-radius: .6rem;
+    border-radius: .5rem;
     opacity: .8;
+    transition: opacity .3s;
+}
+
+.card:hover .card-img-wrapper img{
+    opacity: .5;
+}
+
+.card-info{
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    padding: 2rem;
+    text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, .6);
+    transition: all .3s;
+}
+
+.card-info h2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000;
+}
+
+.card-info h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: #a71302 ;
+    margin-bottom: 1.5rem;
+}
+
+.card-info p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    font-weight:400;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.card-info button{
+    width: 8rem;
+    height: 2.5rem;
+    background: #8E0E00;
+    background: linear-gradient(to left, #1F1C18, #8E0E00);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #eee;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
+}
+
+.card:hover .card-info{
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
 }
