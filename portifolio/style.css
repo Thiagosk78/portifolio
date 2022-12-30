@@ -55,7 +55,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #8E0E00;
+    background-color: #cf1500;
     color: #0c0c0c;
     font-family: var(--font-action);
     opacity: 0;
@@ -138,8 +138,8 @@ header{ /* parte da imagem */
     color: #fff;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    background: #a71302; 
-    background: linear-gradient(to left, #1F1C18, #8E0E00);
+    background: #961102; 
+    background: linear-gradient(to left, #880101);
     padding: 1rem 3rem;
     border: none;
     border-radius: 5px;
@@ -206,7 +206,7 @@ header{ /* parte da imagem */
 }
 
 .social-media i{
-    background-color:#8E0E00;
+    background-color:#ce1804;
     color:#000000;
     height: 2.5rem;
     width: 2.5rem;
@@ -287,8 +287,8 @@ header{ /* parte da imagem */
 .card-info button{
     width: 8rem;
     height: 2.5rem;
-    background: #8E0E00;
-    background: linear-gradient(to left, #1F1C18, #8E0E00);
+    background: #c71603;
+    background: linear-gradient(to left, #cc1500);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     color: #eee;
@@ -396,3 +396,119 @@ header{ /* parte da imagem */
   height: 2rem;
   margin-top: 1rem;
 }
+
+.preenchido{
+    pointer-events: none;
+}
+
+.sessao-orcamento{
+    width: 100%;
+    height: 100vh;
+    background: url("./imagens/gustaf-von-zeipel-NsrkkaxBIQA-unsplash.jpg");
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .orcamento-wrapper{
+    width: 60%;
+    height: 80%;
+    background-color: #ffffff9c;
+    border-radius: 10px;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    position: relative;
+  }
+  
+  .sessao-orcamento h1{
+    position: absolute;
+    top: -2.5rem;
+    left: 2rem;
+    background: #190A05;
+    background: linear-gradient(to left,#190A05,#870000);
+    padding: 0 3rem;
+    color: #fff;
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    font-weight: lighter;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+  
+  .sessao-orcamento form{
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+  
+  .sessao-orcamento label{
+    font-family: var(--font-action);
+    font-size: 1.5rem;
+  }
+  
+  .sessao-orcamento input[type="number"]{
+    font-family: var(--font-secundary);
+    width: 4rem;
+    font-size: 2rem;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    padding: 0.3rem;
+  }
+  
+  .btn-orcamento{
+    text-transform: uppercase;
+    padding: 1rem;
+    cursor: pointer;
+    grid-column: 2;
+  }
+  
+  footer{
+    width: 100%;
+    height: 7rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-content p{
+    font-family: var(--font-secundary);
+    color: #a7a7a7;
+    font-size: 1.2rem;
+  }
+  
+  .social-list a{
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.3rem;
+  }
+  
+  .social-list ul {
+    display: flex;
+  }
+  
+  #link-topo{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: #6a3093;
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
+    background: linear-gradient(to left, #a044ff, #6a3093);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: .3rem;
+    box-shadow:  0 0.1rem 0.6rem #00000009;
+  }

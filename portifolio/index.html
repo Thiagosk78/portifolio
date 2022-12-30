@@ -112,12 +112,57 @@
                                 <textarea class="field" id="mensagem"></textarea>
                                 <label  for="mensagem" class="field-label">Mensagem</label>
                             </div>
-                            <button type="submit" class=" btn btn-submit">Emviar</button>
+                            <button type="submit" class=" btn btn-submit">Enviar</button>
                            </form>
                         </div>
                 </div>
             </section>
 
+            <section class="sessao-orcamento" id="orcamento">
+                <div class="orcamento-wrapper">
+                  <h1>Faça um orçamento</h1>
+                  <form>
+                    <label for="qtde">horas de gravação</label>
+                    <input type="number" min="1" name="qtde" id="qtde">
+                    <label for="js">cobrimento de eventos</label>
+                    <input type="checkbox" name="js" id="js">
+                    <label>sessão de fotos</label>
+                    <div class="group-layout">
+                      <div>
+                        <input type="radio" name="layout" id="layout-sim">
+                        <label for="layout-sim">Preciso de um modelo</label>
+                      </div>
+                      <div>
+                        <input type="radio" name="layout" id="layout-nao">
+                        <label for="layout-nao">Já tenho um modelo</label>
+                      </div>
+                    </div>
+                    <label for="prazo">Prazo</label>
+                    <input type="range" name="prazo" id="prazo" min="1" max="10">
+                    <label id="preco">R$ 0,00</label>
+                    <button class="btn btn-orcamento" type="submit">Enviar</button>
+                  </form>
+                </div>
+              </section>
+
+              <footer>
+                <div class="footer-content">
+                  <p>
+                    Copyright &copy; 2020, ETECIA DS - Todos os diretos reservados
+                  </p>
+                  <div class="social-list">
+                    <ul>
+                      <li><a href="https://www.facebook.com/ddrone.imagensaereas"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="https://www.instagram.com/ddrone.imagensaereas/"><i class="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.youtube.com/@ddrone.imagensaereas"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </footer>
+              <a href="#home" id="link-topo">
+                <i class="fas fa-arrow-up"></i>
+              </a>
+          </div>
 </body>    
     <script src="script.js"></script>
 </html>
