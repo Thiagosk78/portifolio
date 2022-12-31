@@ -9,6 +9,16 @@
     text-decoration: none;
 }
 
+:root{
+    --font-primary: "baloo da 2", serif;
+    --font-secundary:"josefin slab", serif;
+    --font-action: "muli", serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
 .hamburguer{ /* propriedade button */
     width: 2rem;
     height: 2rem;
@@ -167,6 +177,7 @@ header{ /* parte da imagem */
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 150;
 }
 
 .show-menu .sidebar {
@@ -502,13 +513,11 @@ header{ /* parte da imagem */
     bottom: 3rem;
     width: 3rem;
     height: 3rem;
-    background: #6a3093;
-    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
-    background: linear-gradient(to left, #a044ff, #6a3093);
+    background: linear-gradient(to left, #ff0000, #ff0000);
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
     border-radius: .3rem;
-    box-shadow:  0 0.1rem 0.6rem #00000009;
+    box-shadow:  0 0.1rem 0.6rem #42424209;
   }
