@@ -143,13 +143,13 @@ header{ /* parte da imagem */
     opacity: 0;
     animation: movebanner 1s 0.7s forwards;
 }
-.banner button{
+.banner button {
     font-family:var(--font-action);
-    color: #fff;
+    color: rgba(255, 249, 249, 0.801);
     text-transform: uppercase;
     letter-spacing: .1rem;
-    background: #961102; 
-    background: linear-gradient(to left, #880101);
+    background: #be1503; 
+    background: linear-gradient(to left, #b30202);
     padding: 1rem 3rem;
     border: none;
     border-radius: 5px;
